@@ -19,7 +19,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "simple_database": "node ./1-simple-database-query/index.js",
-    "express-task": "node ./2-express-task/drivers/webserver/server.js"
+    "express-task": "node ./2-express-task/drivers/webserver/server.js",
+    "refactor": "node ./3-refactor"
   },
   "repository": {
     "type": "git",
