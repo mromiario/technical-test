@@ -19,5 +19,23 @@ module.exports = {
       }
     })
     return result.data
+  },
+  getBySearch: async (query) => {
+    if (!query.s) {
+      const err = new Error()
+      err.statusCode = 400
+      err.message = `Please input query "s" (find by title)`
+      throw err
+    }
+    const result = await axios({
+      method: 'get',
+      url: 'http://www.omdbapi.com',
+      params: {
+        apikey: process.env.OMDB_API_KEY,
+        r: 'json',
+        s: query.s
+      }
+    })
+    return result.data
   }
 }
