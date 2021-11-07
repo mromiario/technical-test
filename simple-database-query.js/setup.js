@@ -3,7 +3,7 @@ const createUsers =
 // Create table user
 `
     CREATE TABLE USER(
-        id INTEGER PRIMARY KEY,
+        ID INTEGER PRIMARY KEY,
         UserName TEXT,
         Parent INTEGER,
         FOREIGN KEY (Parent) REFERENCES USER(id) 
