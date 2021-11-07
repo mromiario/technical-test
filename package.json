@@ -4,6 +4,9 @@
   "description": "Node JS Backend Test by M Romi Ario",
   "main": "index.js",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "joi": "^17.4.2",
     "sqlite3": "^5.0.2"
   },
   "devDependencies": {
