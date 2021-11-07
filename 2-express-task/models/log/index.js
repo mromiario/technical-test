@@ -3,6 +3,6 @@ let logSchema = require('./log-schema')
 let logValidator = require('../validator')(logSchema)
 
 
-let makeLog = buildLog(buildLog)
+let makeLog = buildLog(logValidator)
 
 module.exports = makeLog
