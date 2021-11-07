@@ -4,8 +4,8 @@ let makeLog = require('../../../models/log/index') // model
 let addLog = (payload) => {
   let log = makeLog(payload)
   let newLog = {
-    endpoint: log.getName(),
-    createdAt: log.getCreatedAt(),
+    endpoint: log.getEndpoint(),
+    createdat: log.getCreatedat(),
     parameters: log.getParameters()
   }
   return knex('logs')

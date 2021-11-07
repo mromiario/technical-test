@@ -3,7 +3,7 @@ exports.up = function(knex) {
       CREATE TABLE logs (
         id serial PRIMARY KEY,
         endpoint varchar(100),
-        createdAt timestamp,
+        createdat timestamp,
         parameters json
       );
     `)
