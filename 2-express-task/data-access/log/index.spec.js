@@ -1,3 +1,4 @@
+require('dotenv').config()
 let chai = require('chai');
 let expect = chai.expect;
 let logDataAccess = require('./index')

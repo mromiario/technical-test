@@ -2,11 +2,11 @@ module.exports = {
   development: {
     client: 'pg',
     connection: {
-      host: 'localhost',
-      user: 'postgres',
-      password: 'qlue1234',
-      database: 'bibitdb',
-      port: 5433
+      host: process.env.HOST_DB,
+      user: process.env.USER_DB,
+      password: process.env.PASSWORD_DB,
+      database: process.env.NAME_DB,
+      port: process.env.PORT_DB
     },
     migrations: {
       directory: __dirname + '/db/pg/migrations'
@@ -15,11 +15,11 @@ module.exports = {
   production: {
     client: 'pg',
     connection: {
-      host: process.env.HOST,
-      user: process.env.USER,
-      password: process.env.PASSWORD,
-      database: process.env.DATABASE,
-      port: process.env.PORT,
+      host: process.env.HOST_DB,
+      user: process.env.USER_DB,
+      password: process.env.PASSWORD_DB,
+      database: process.env.NAME_DB,
+      port: process.env.PORT_DB,
       ssl: true
     },
     migrations: {
