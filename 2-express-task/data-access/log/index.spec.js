@@ -31,7 +31,7 @@ describe('log', () => {
       }
     }
     expect(() => {
-      studentsDb.addLog(invalid)
+      logDataAccess.addLog(invalid)
     })
     .to.throw(Error)
   })
