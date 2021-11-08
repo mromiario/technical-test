@@ -33,7 +33,7 @@ npm run simple_database
 		- `PASSWORD_DB` your password of postgres user
 		- `NAME_DB` your database name
 		- `PORT_DB` your allocated port of database
-		- `PORT_EXPRESS`your allocated port for running the express server
+		- `PORT`your allocated port for running the express server
 	- For running the express server you can run this command in your terminal `npm run express-task`
 	- API Docs:
 		1.  **URL:  {baseUrl}/detail**
