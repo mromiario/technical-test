@@ -35,6 +35,7 @@ npm run simple_database
 		- `PORT_DB` your allocated port of database
 		- `PORT`your allocated port for running the express server
 	- For running the express server you can run this command in your terminal `npm run express-task`
+	- I already deploy it to heroku with this base url: https://bibit-test-romi.herokuapp.com/
 	- API Docs:
 		1.  **URL:  {baseUrl}/detail**
 		-  Method: GET
