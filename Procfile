@@ -1,1 +1,1 @@
-web: npm run express-task
+web: node ./2-express-task/drivers/webserver/server.js
